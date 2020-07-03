@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,OAAO,CAAC;EACJ,MAAM,EAAE,OAAO;EACf,KAAK,EAAE,IAAI;CAMd;;AAJI,AAAD,cAAQ,CAAC;EACL,UAAU,EAAE,MAAM;CACrB",
+    "sources": [
+        "../client/src/components/Header/Header.scss",
+        "../client/src/styles/_all-utils.scss",
+        "../client/src/styles/_mixins.scss",
+        "../client/src/styles/_variables.scss",
+        "../client/src/styles/_fonts.scss"
+    ],
+    "names": [],
+    "file": "Header.css"
+}

@@ -1,0 +1,18 @@
+{
+    "version": 3,
+    "mappings": "AKEA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,oBAAoB,EAAE,IAAI;CAC7B;;ALFD,AAAA,IAAI,CAAC;EACD,OAAO,EAAE,aAAa;CAKzB;;AAHI,AAAD,iBAAc,CAAC;EACX,OAAO,EAAE,IAAI;CAChB",
+    "sources": [
+        "../client/src/App.scss",
+        "../client/src/styles/_all-utils.scss",
+        "../client/src/styles/_mixins.scss",
+        "../client/src/styles/_variables.scss",
+        "../client/src/styles/_fonts.scss",
+        "../client/src/styles/base.scss",
+        "../client/src/styles/_all-utils.scss",
+        "../client/src/styles/_mixins.scss",
+        "../client/src/styles/_variables.scss",
+        "../client/src/styles/_fonts.scss"
+    ],
+    "names": [],
+    "file": "App.css"
+}

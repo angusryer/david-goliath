@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "Height": 1815,
+    "Name": "CN Tower",
+    "Location": "Toronto"
+  },
+  {
+    "id": 2,
+    "Height": 787,
+    "Name": "Bahrain World Trade Center",
+    "Location": "Bahrain",
+    "url": "http://www.skyscrapercenter.com/img/building-outlines/BahrainWorldTradeCenter1.png"
+  }
+]

@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,SAAS,CAAC;EACN,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,0BAA0B;EAClC,aAAa,EAAE,MAAM;EACrB,OAAO,EAAE,IAAI;CAChB",
+    "sources": [
+        "../client/src/components/ItemList/ItemList.scss",
+        "../client/src/styles/_all-utils.scss",
+        "../client/src/styles/_mixins.scss",
+        "../client/src/styles/_variables.scss",
+        "../client/src/styles/_fonts.scss"
+    ],
+    "names": [],
+    "file": "ItemList.css"
+}
