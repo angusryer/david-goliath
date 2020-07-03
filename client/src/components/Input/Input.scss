@@ -1,0 +1,14 @@
+@import '../../styles/all-utils';
+
+.input {
+    border: 0.5px solid grey;
+    border-radius: 0.5rem;
+
+    &__entry {
+        width: 80%;
+        padding: 1rem;
+        border: none;
+        background-color: lightgray;
+    }
+
+}

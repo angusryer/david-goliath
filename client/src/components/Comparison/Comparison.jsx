@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import './Comparison.scss';
 
 export const Comparison = () => {
     return (
-        <div>
-            
+        <div className="comparison">
+            COMPARISON
         </div>
     )
 }

@@ -1,9 +1,10 @@
 import React from 'react'
+import './User.scss';
 
 export const User = () => {
     return (
-        <div>
-            
+        <div className="user">
+            USER
         </div>
     )
 }
