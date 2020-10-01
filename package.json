@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "client-install"  : "cd client && npm client-install",
+        "client-install"  : "cd client && npm run client-install",
         "server-install"  : "cd server && npm run server-install",
     }
 }
