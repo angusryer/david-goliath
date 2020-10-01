@@ -1,6 +1,32 @@
 {
+    "name": "david-and-goliath",
+    "version": "1.0.0",
+    "description": "",
     "scripts": {
-        "client-install"  : "cd client && npm run client-install",
-        "server-install"  : "cd server && npm run server-install",
+      "start": "node server/server.js",
+      "build": "cd client/ && npm install && npm run build",
+      "server": "nodemon server/server.js",
+      "client": "cd client/ && npm start",
+      "setup": "npm install && npm run build"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/angusryer/david-and-goliath.git"
+    },
+    "keywords": [],
+    "author": "Angus Ryer and Stephen Kiddle",
+    "license": "ISC",
+    "engines": {
+      "node": "12.18.3"
+    },
+    "dependencies": {
+      "express": "^4.17.1",
+    },
+    "cacheDirectories": [
+      "node_modules",
+      "client/node_modules"
+    ],
+    "devDependencies": {
+      "nodemon": "^2.0.4"
     }
-}
+  }
