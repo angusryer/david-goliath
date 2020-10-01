@@ -5,7 +5,7 @@
     "scripts": {
       "start": "node server/server.js",
       "build": "cd client/ && npm install && npm run build",
-      "server": "nodemon server/server.js",
+      "server": "node server/server.js",
       "client": "cd client/ && npm start",
       "setup": "npm install && npm run build"
     },
@@ -20,13 +20,6 @@
       "node": "12.18.3"
     },
     "dependencies": {
-      "express": "^4.17.1",
-    },
-    "cacheDirectories": [
-      "node_modules",
-      "client/node_modules"
-    ],
-    "devDependencies": {
-      "nodemon": "^2.0.4"
+      "express": "^4.17.1"
     }
   }
