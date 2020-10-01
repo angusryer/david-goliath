@@ -1,0 +1,7 @@
+{
+    "scripts": {
+        "client-install"  : "cd client && npm install",
+        "server-install"  : "cd server && npm install",
+        "install-all-deps": "concurrently \"npm run server-install\" \"npm run client-install\""
+    }
+}
