@@ -1,11 +1,9 @@
-@import '../../styles/all-utils';
+@import "../../styles/all-utils";
 
 .header {
-    height: 6.25rem;
-    width: 100%;
-
-    &__title {
-        text-align: center;
-    }
-
+  height: 65px;
+  &__title {
+    text-align: center;
+    margin: 0;
+  }
 }

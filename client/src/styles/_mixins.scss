@@ -3,3 +3,8 @@
         @content;
     }
 }
+
+@mixin border ($width: 0.5px, $radius: 0.3rem) {
+    border: $width solid lightslategrey;
+    border-radius: $radius;
+}

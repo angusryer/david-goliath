@@ -2,9 +2,16 @@
 @import "./styles/base.scss";
 
 .app {
-  &__visual-list {
-    display: flex;
-    height: calc(100vh - 300px);
-    width: 100%;
-  }
+
+    &__container {
+        display: flex;
+        flex-flow: column nowrap;
+        height: calc(100% - 130px);
+    }
+    
+    &__visuals-container {
+        display: flex;
+        height: calc(100% - 65px);
+    }
+
 }

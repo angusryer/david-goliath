@@ -3,11 +3,11 @@ import User from '../User';
 import Comparison from '../Comparison'
 import './Visualization.scss';
 
-export const Visualization = () => {
+export const Visualization = ({user, comparison}) => {
     return (
         <div className="visual">
-            <User />
-            <Comparison />
+            <User user={user} />
+            <Comparison comparison={comparison} />
         </div>
     )
 }

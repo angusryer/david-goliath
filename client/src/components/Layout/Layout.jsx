@@ -1,16 +1,16 @@
-import React from 'react';
-import Header from '../Header';
-import Input from '../Input';
-import './Layout.scss';
+import React from "react";
+import Footer from "../Footer/Footer";
+import Header from "../Header";
+import "./Layout.scss";
 
-const Layout = ({children}) => {
-    return ( 
-        <main className="layout">
-            <Header />
-            <Input />
-            {children}
-        </main>
-     );
-}
- 
+const Layout = ({ children }) => {
+  return (
+    <main className="layout">
+      <Header />
+      {children}
+      <Footer />
+    </main>
+  );
+};
+
 export default Layout;

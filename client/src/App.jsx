@@ -1,38 +1,50 @@
-import React from 'react';
-import axios from 'axios';
-import Visualization from './components/Visualization';
-import ItemList from './components/ItemList';
-import './App.scss';
-import Layout from './components/Layout/Layout';
+import React from "react";
+import axios from "axios";
+import Visualization from "./components/Visualization";
+import ItemList from "./components/ItemList";
+import "./App.scss";
+import Layout from "./components/Layout/Layout";
+import Input from "./components/Input";
 
 class App extends React.Component {
   state = {
     listObjects: [],
-    selectedItem: null
-  }
+    selectedItem: null,
+    userHeight: null,
+  };
 
   componentDidMount() {
-    axios
-      .get("/objectlist")
-      .then(res => {
-        this.setState({
-          listObjects: res.data
-        })
-      })
+    axios.get("/objectlist").then((res) => {
+      this.setState({
+        listObjects: res.data,
+      });
+    });
   }
 
-  selectItem = id => {
+  selectItem = (id) => {
     this.setState({
-      selectedItem: id
-    })
-  }
+      selectedItem: id,
+    });
+  };
+
+  getInput = (value) => {
+    this.setState({ userHeight: value });
+  };
 
   render() {
     return (
       <Layout>
-        <div className="app__visual-list">
-          <Visualization selectedItem={this.state.selectedItem}/>
-          {this.state.listObjects && <ItemList itemList={this.state.listObjects} selectItem={this.selectItem} />}
+        <div className="app__container">
+          <Input getInput={this.getInput} />
+          <div className="app__visuals-container">
+            <Visualization selectedItem={this.state.selectedItem} />
+            {this.state.listObjects && (
+              <ItemList
+                itemList={this.state.listObjects}
+                selectItem={this.selectItem}
+              />
+            )}
+          </div>
         </div>
       </Layout>
     );

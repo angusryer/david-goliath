@@ -1,0 +1,12 @@
+@import '../../styles/all-utils';
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+
+    span {
+        font-size: 0.8rem;
+    }
+}

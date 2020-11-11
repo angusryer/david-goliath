@@ -5,9 +5,10 @@
     flex-flow: column nowrap;
     align-items: center;
     justify-content: flex-start;
-    margin: 1rem;
-    width: 30%;
-    border: 0.5px solid lightslategray;
-    border-radius: 0.3rem;
+    flex: 0.3;
+    @include border;
     padding: 0.5rem;
+    margin: 0 0 0 0.5rem;
+    height: 100%;
+    overflow: auto;
 }
