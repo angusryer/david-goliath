@@ -1,11 +1,13 @@
-import React from 'react'
-import './Item.scss';
+import React from "react";
+import "./Item.scss";
 
-export const Item = () => {
-    return (
-        <div className="item">
-            <img className="item__image" src={} alt=""/>
-            <span className="item__title"></span>
-        </div>
-    )
-}
+export const Item = ({ item, selectItem }) => {
+  return (
+    <div className="item">
+      <div className="item__box" onClick={() => selectItem(item.id)}>
+        <img className="item__box-content" src={item.url} alt={item.name} />
+      </div>
+      <span className="item__name">{item.name}</span>
+    </div>
+  );
+};

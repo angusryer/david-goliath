@@ -1,1 +1,30 @@
-@import '../../styles/all-utils';
+@import "../../styles/all-utils";
+
+.item {
+  height: calc(100% / 3);
+  max-height: 225px;
+  min-height: 175px;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 1rem;
+
+  &__box {
+    height: calc(100% - 1rem - 5px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-content {
+      height: 100%;
+      width: inherit;
+      object-fit: contain;
+    }
+  }
+
+  &__name {
+    padding: 5px 0 0 0;
+    text-align: center;
+    width: 100%;
+  }
+}

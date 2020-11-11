@@ -1,10 +1,10 @@
-@import './styles/all-utils';
-@import './styles/base.scss';
+@import "./styles/all-utils";
+@import "./styles/base.scss";
 
 .app {
-    padding: 0 1rem 0 1rem;
-
-    &__visual-list {
-        display: flex;
-    }
+  &__visual-list {
+    display: flex;
+    height: calc(100vh - 300px);
+    width: 100%;
+  }
 }

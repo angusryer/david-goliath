@@ -1,9 +1,13 @@
 @import '../../styles/all-utils';
 
 .itemlist {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
     margin: 1rem;
     width: 30%;
     border: 0.5px solid lightslategray;
     border-radius: 0.3rem;
-    padding: 1rem;
+    padding: 0.5rem;
 }

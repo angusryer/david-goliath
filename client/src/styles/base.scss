@@ -1,6 +1,10 @@
 @import './all-utils';
 
 * {
-    margin: 0;
     text-decoration-line: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
 }

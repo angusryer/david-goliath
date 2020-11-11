@@ -1,10 +1,11 @@
 import React from 'react'
+import Item from '../Item'
 import './ItemList.scss';
 
-export const ItemList = () => {
-    return (
-        <div className="itemlist">
-            ITEM LIST
-        </div>
-    )
-}
+export const ItemList = ({itemList, selectItem}) => (
+    <div className="itemlist">
+        {itemList.map(item => {
+            return <Item key={item.id} item={item} selectItem={selectItem} />;
+        })}
+    </div>
+)
