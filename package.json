@@ -4,11 +4,8 @@
     "description": "",
 
     "scripts": {
-      "start": "node server/server.js",
-      "build": "cd client/ && npm install && npm run build",
-      "server": "node server/server.js",
-      "client": "cd client/ && npm start",
-      "setup": "npm install && npm run build"
+      "start": "node server.js",
+      "build": "cd client && npm i && npm run build"
     },
     "repository": {
       "type": "git",
@@ -21,6 +18,7 @@
       "node": "12.18.3"
     },
     "dependencies": {
-      "express": "^4.17.1"
+      "express": "^4.17.1",
+      "dotenv": "^8.2.0"
     }
   }

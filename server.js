@@ -1,9 +1,11 @@
 const app = require('express')();
-const listItems = './data/data.json'
-app.get('/', (req, res, next) => {
-  next()
-  console.log(req)
+const listItems = require('./data/data.json');
+require('dotenv').config();
+
+const port = process.env.PORT || 5001;
+
+app.get('/', (_req, res) => {
+  res.status(200).send(listItems);
 })
 
-
-app.listen(8080, () => console.log("working port 8080")) 
+app.listen(port, () => console.log(`Server listening on port ${port}`)) 
