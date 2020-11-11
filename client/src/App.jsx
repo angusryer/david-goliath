@@ -15,7 +15,8 @@ class App extends React.Component {
 
   componentDidMount() {
     axios.get("/objectlist").then((res) => {
-      this.setState({
+      console.log(res.data)
+      this.setState({        
         listObjects: res.data,
       });
     });

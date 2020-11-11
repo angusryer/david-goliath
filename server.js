@@ -1,21 +1,19 @@
-const express = require('express');
+const express = require("express");
 const app = express();
 
-require('dotenv').config();
+require("dotenv").config();
 
 const port = process.env.PORT || 5001;
-const path = require('path')
-const listItems = require('./data/data.json');
+const listItems = require("./data/data.json");
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, 'client/build')))
-  app.get('*', (_req, res) => {
-    res.sendFile(path.join(__dirname + '/client/build/index.html'))
-  })
-}
+app.use(express.static(`${__dirname}/client/build`));
 
-app.get('/objectlist', (_req, res) => {
+app.get("*", (_req, res) => {
+  res.sendFile(`${__dirname}/client/build/index.html`);
+});
+
+app.get("/objectlist", (_req, res) => {
   res.status(200).send(listItems);
-})
+});
 
-app.listen(port, () => console.log(`Server listening on port ${port}`)) 
+app.listen(port, () => console.log(`Server listening on port ${port}`));
