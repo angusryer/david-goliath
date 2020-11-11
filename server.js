@@ -11,7 +11,7 @@ app.get('*', (_req, res) => {
   res.sendFile(path.join(__dirname + '/client/build/index.html'))
 })
 
-app.get('/', (_req, res) => {
+app.get('/objectlist', (_req, res) => {
   res.status(200).send(listItems);
 })
 
