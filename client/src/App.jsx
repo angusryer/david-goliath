@@ -17,19 +17,19 @@ class App extends React.Component {
     axios.get("/objectlist").then((res) => {
       console.log(res.data)
       this.setState({        
-        listObjects: res.data,
+        listObjects: res.data || [],
       });
     });
   }
 
   selectItem = (id) => {
     this.setState({
-      selectedItem: id,
+      selectedItem: id || null,
     });
   };
 
   getInput = (value) => {
-    this.setState({ userHeight: value });
+    this.setState({ userHeight: value || null });
   };
 
   render() {
