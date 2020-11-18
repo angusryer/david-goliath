@@ -1,24 +1,24 @@
 {
-    "name": "david-and-goliath",
-    "version": "1.0.0",
-    "description": "",
-
-    "scripts": {
-      "start": "node server.js",
-      "build": "cd client && npm i && npm run build"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/angusryer/david-and-goliath.git"
-    },
-    "keywords": [],
-    "author": "Angus Ryer and Stephen Kiddle",
-    "license": "ISC",
-    "engines": {
-      "node": "12.18.3"
-    },
-    "dependencies": {
-      "express": "^4.17.1",
-      "dotenv": "^8.2.0"
-    }
+  "name": "david-and-goliath-server",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node server.js",
+    "build": "cd client && npm i && npm run build",
+    "run-dev": "node server.js && cd client && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angusryer/david-and-goliath.git"
+  },
+  "keywords": [],
+  "author": "Angus Ryer and Stephen Kiddle",
+  "license": "ISC",
+  "engines": {
+    "node": "12.18.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "dotenv": "^8.2.0"
   }
+}

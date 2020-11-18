@@ -15,7 +15,6 @@ class App extends React.Component {
 
   componentDidMount() {
     axios.get("/objectlist").then((res) => {
-      console.log(res.data)
       this.setState({        
         listObjects: res.data || [],
       });
@@ -33,6 +32,7 @@ class App extends React.Component {
   };
 
   render() {
+    console.log(this.state.listObjects)
     return (
       <Layout>
         <div className="app__container">
