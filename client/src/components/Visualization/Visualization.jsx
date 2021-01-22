@@ -17,7 +17,7 @@ export const Visualization = ({ userHeight, selectedItem }) => {
 	const relativeHeight = getAvatarHeight(userHeight, selectedItem);
 	return (
 		<div className='visual'>
-			<User userHeight={relativeHeight} />
+			<User relativeHeight={relativeHeight} actualHeight={userHeight} />
 			<Comparison selectedItem={selectedItem} />
 		</div>
 	);
