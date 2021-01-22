@@ -1,10 +1,12 @@
-import React from 'react'
-import './Header.scss';
+import React from "react";
+import "./Header.scss";
 
 export const Header = () => {
-    return (
-        <header className="header">
-            <h1 className="header__title">David and Goliath</h1>
-        </header>
-    )
-}
+	return (
+		<header className='header'>
+			<h1 className='header__title'>
+				<a href='/'>David and Goliath</a>
+			</h1>
+		</header>
+	);
+};

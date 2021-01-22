@@ -1,13 +1,24 @@
-import React from 'react'
-import User from '../User';
-import Comparison from '../Comparison'
-import './Visualization.scss';
+import React from "react";
+import User from "../User";
+import Comparison from "../Comparison";
+import "./Visualization.scss";
 
-export const Visualization = ({user, comparison}) => {
-    return (
-        <div className="visual">
-            <User user={user} />
-            <Comparison comparison={comparison} />
-        </div>
-    )
-}
+const getAvatarHeight = (userHeight, selectedItem) => {
+	if (selectedItem) {
+		return selectedItem.hasOwnProperty("height")
+			? userHeight / selectedItem.height * 100 + "%"
+			: "min-content";
+	} else {
+		return "min-content";
+	}
+};
+
+export const Visualization = ({ userHeight, selectedItem }) => {
+	const relativeHeight = getAvatarHeight(userHeight, selectedItem);
+	return (
+		<div className='visual'>
+			<User userHeight={relativeHeight} />
+			<Comparison selectedItem={selectedItem} />
+		</div>
+	);
+};

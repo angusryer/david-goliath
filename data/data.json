@@ -1,35 +1,35 @@
 [
   {
     "id": 1,
-    "height": 1815,
+    "height": 553,
     "name": "CN Tower",
     "location": "Toronto",
     "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/CNTower-outline.svg"
   },
   {
     "id": 2,
-    "height": 787,
+    "height": 240,
     "name": "Bahrain World Trade Center",
     "location": "Bahrain",
     "url": "http://www.skyscrapercenter.com/img/building-outlines/BahrainWorldTradeCenter1.png"
   },
   {
     "id": 3,
-    "height": 30,
+    "height": 18,
     "name": "A Tree",
     "location": "Your Friend's Backyard",
     "url": "https://www.onlygfx.com/wp-content/uploads/2016/11/tree-silhouette-2-1.png"
   },
   {
     "id": 4,
-    "height": 6,
+    "height": 2.1,
     "name": "Your Best Friend",
     "location": "Your Friend's Home",
     "url": "https://www.onlygfx.com/wp-content/uploads/2020/07/people-with-baloon-silhouette-5.png"
   },
   {
     "id": 5,
-    "height": 1,
+    "height": 0.15,
     "name": "Your cat",
     "location": "Your Home",
     "url": "https://www.onlygfx.com/wp-content/uploads/2017/03/cute-cat-4.png"

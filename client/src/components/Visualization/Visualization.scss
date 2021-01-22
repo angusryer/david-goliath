@@ -1,11 +1,10 @@
 @import '../../styles/all-utils';
 
 .visual {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    flex: 1;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
     @include border;
     padding: 0.5rem;
     height: 100%;
+    width: 100%;
 }

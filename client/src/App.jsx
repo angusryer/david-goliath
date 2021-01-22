@@ -14,17 +14,21 @@ class App extends React.Component {
   };
 
   componentDidMount() {
-    axios.get("/objectlist").then((res) => {
+    axios.get('/objectlist').then((res) => {
       this.setState({        
         listObjects: res.data || [],
       });
-    });
+    }).catch(err => console.error(`On Mount: ${err}`));
   }
 
   selectItem = (id) => {
-    this.setState({
-      selectedItem: id || null,
-    });
+    axios.get(`/objectlist/${parseInt(id)}`)
+    .then(response => {
+      this.setState({
+        selectedItem: response.data || null,
+      });
+    }).catch(err => console.info(`No item with id ${id} found.`, err))
+
   };
 
   getInput = (value) => {
@@ -32,13 +36,12 @@ class App extends React.Component {
   };
 
   render() {
-    console.log(this.state.listObjects)
     return (
       <Layout>
         <div className="app__container">
           <Input getInput={this.getInput} />
           <div className="app__visuals-container">
-            <Visualization selectedItem={this.state.selectedItem} />
+            <Visualization selectedItem={this.state.selectedItem} userHeight={this.state.userHeight}/>
             {this.state.listObjects && (
               <ItemList
                 itemList={this.state.listObjects}
